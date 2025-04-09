@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
-import { Menu, X, Phone, Calendar } from "lucide-react";
+import { Menu, X, Phone, Calendar, Stethoscope } from "lucide-react";
 import { Link } from 'react-router-dom';
 import ScrollLink from './ScrollLink';
 
@@ -20,7 +20,10 @@ const Navbar = () => {
       <div className="container mx-auto py-4">
         <nav className="flex items-center justify-between">
           <div className="flex items-center animate-fade-in">
-            <Link to="/" className="text-2xl font-semibold text-medical-dark-blue">Dr. Mattheus Motta</Link>
+            <Link to="/" className="flex items-center gap-2 text-2xl font-semibold text-medical-dark-blue">
+              <Stethoscope className="w-6 h-6" />
+              <span>Dr. Mattheus Motta</span>
+            </Link>
           </div>
 
           {/* Desktop Navigation */}

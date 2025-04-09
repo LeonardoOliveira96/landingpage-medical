@@ -1,7 +1,6 @@
+import { Heart, Stethoscope, Users, Clipboard, Activity, Clock, LucideIcon } from 'lucide-react';
 
-import { Heart, Stethoscope, Users, Clipboard, Activity, Clock } from 'lucide-react';
-
-const ServiceCard = ({ icon: Icon, title, description }: { icon: any, title: string, description: string }) => {
+const ServiceCard = ({ icon: Icon, title, description }: { icon: LucideIcon, title: string, description: string }) => {
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow border border-gray-100 hover:border-medical-dark-blue">
       <div className="bg-medical-light-blue w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto">
@@ -48,24 +47,26 @@ const Services = () => {
   ];
 
   return (
-    <section id="servicos" className="section-padding bg-medical-light-gray">
+    <section id="servicos" className="section-padding bg-gray-50">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Nossos Serviços</h2>
           <div className="w-20 h-1 bg-medical-dark-blue mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            Oferecemos uma ampla gama de serviços médicos para cuidar da sua saúde com qualidade e atenção
+            O Dr. Mattheus Motta oferece uma ampla gama de serviços médicos para atender às suas necessidades de saúde
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
-            <ServiceCard
-              key={index}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-            />
+            <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+              <ServiceCard
+                key={index}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+              />
+            </div>
           ))}
         </div>
       </div>

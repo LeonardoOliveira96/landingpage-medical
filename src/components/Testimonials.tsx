@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Star } from 'lucide-react';
 
@@ -46,22 +45,23 @@ const Testimonials = () => {
   return (
     <section id="depoimentos" className="section-padding bg-white">
       <div className="container mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Depoimentos</h2>
           <div className="w-20 h-1 bg-medical-dark-blue mx-auto mb-6"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            O que nossos pacientes dizem sobre nós
+            Veja o que nossos pacientes dizem sobre o atendimento do Dr. Mattheus Motta
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <TestimonialCard
-              key={index}
-              name={testimonial.name}
-              quote={testimonial.quote}
-              stars={testimonial.stars}
-            />
+            <div key={index} className="bg-medical-light-blue p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: `${index * 0.2}s` }}>
+              <TestimonialCard
+                name={testimonial.name}
+                quote={testimonial.quote}
+                stars={testimonial.stars}
+              />
+            </div>
           ))}
         </div>
       </div>

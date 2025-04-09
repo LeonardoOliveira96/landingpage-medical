@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -8,8 +7,8 @@ const Footer = () => {
     <footer className="bg-gradient-to-r from-blue-800 to-blue-900 text-white">
       <div className="container mx-auto py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
-            <h3 className="text-xl font-bold mb-4">MedClinic</h3>
+          <div className="animate-fade-in" style={{ animationDelay: '0.1s' }}>
+            <h3 className="text-xl font-bold mb-4">Dr. Mattheus Motta</h3>
             <p className="mb-4 text-blue-100">
               Cuidando da sua saúde com excelência e humanização. Nossa missão é proporcionar o melhor atendimento médico.
             </p>
@@ -26,7 +25,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div>
+          <div className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
             <h3 className="text-xl font-bold mb-4">Links Rápidos</h3>
             <ul className="space-y-2">
               <li>
@@ -47,7 +46,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="animate-fade-in" style={{ animationDelay: '0.3s' }}>
             <h3 className="text-xl font-bold mb-4">Horário de Atendimento</h3>
             <ul className="space-y-2">
               <li className="flex justify-between">
@@ -65,7 +64,7 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
+          <div className="animate-fade-in" style={{ animationDelay: '0.4s' }}>
             <h3 className="text-xl font-bold mb-4">Contato</h3>
             <ul className="space-y-4">
               <li className="flex items-start">
@@ -78,14 +77,14 @@ const Footer = () => {
               </li>
               <li className="flex items-center">
                 <Mail size={18} className="mr-2 flex-shrink-0" />
-                <span>contato@medclinic.com.br</span>
+                <span>contato@drmattheus.com.br</span>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-blue-700 mt-12 pt-6 text-center text-blue-200">
-          <p>&copy; {new Date().getFullYear()} MedClinic. Todos os direitos reservados.</p>
+        <div className="border-t border-blue-700 mt-12 pt-6 text-center text-blue-200 animate-fade-in" style={{ animationDelay: '0.5s' }}>
+          <p>&copy; {new Date().getFullYear()} Dr. Mattheus Motta. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

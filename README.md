@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# Site Dr. Matheus Motta - Médico
 
-## Project info
+Este repositório contém o código-fonte do site profissional do Dr. Matheus Motta, médico especializado em atendimento familiar e cuidados de qualidade.
 
-**URL**: https://lovable.dev/projects/f451b054-0816-4ce1-90b8-7d846cda9e16
+## Visualização da Página
 
-## How can I edit this code?
+![Landing Page Preview](./public/screenshots/pagina%20inteira.png)
 
-There are several ways of editing your application.
+## Sobre o Projeto
 
-**Use Lovable**
+Este site foi desenvolvido para o Dr. Matheus Motta, médico com experiência em medicina de família e atendimento personalizado. O site apresenta informações sobre:
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f451b054-0816-4ce1-90b8-7d846cda9e16) and start prompting.
+- Serviços médicos oferecidos
+- Especialidades (Consultas Médicas, Cardiologia, Medicina de Família)
+- Informações de contato e localização
+- Formulário para agendamento de consultas
+- Depoimentos de pacientes
 
-Changes made via Lovable will be committed automatically to this repo.
+## Tecnologias Utilizadas
 
-**Use your preferred IDE**
+O projeto foi construído utilizando as seguintes tecnologias:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- **React**: Biblioteca JavaScript para construção de interfaces
+- **TypeScript**: Adiciona tipagem estática ao JavaScript
+- **Vite**: Build tool rápida para desenvolvimento moderno
+- **Tailwind CSS**: Framework CSS utilitário para estilização
+- **Shadcn UI**: Componentes de UI reutilizáveis e acessíveis
+- **React Router**: Para navegação entre páginas
+- **React Hook Form**: Para gerenciamento de formulários
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Como Executar o Projeto
 
-Follow these steps:
+Para executar o projeto localmente, siga estes passos:
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+```bash
+# Clone o repositório
+git clone https://github.com/seuusuario/Matheus-Motta-Medico.git
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+# Entre na pasta do projeto
+cd Matheus-Motta-Medico
 
-# Step 3: Install the necessary dependencies.
-npm i
+# Instale as dependências
+npm install
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Execute o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+O site estará disponível em `http://localhost:5173/` (ou na porta indicada no terminal).
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Estrutura do Projeto
 
-**Use GitHub Codespaces**
+- `src/components/`: Componentes reutilizáveis (Header, Footer, Cards, etc.)
+- `src/pages/`: Páginas principais do site
+- `src/hooks/`: Custom hooks
+- `src/lib/`: Utilitários e configurações
+- `public/`: Arquivos estáticos (imagens, favicon, etc.)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Como Fazer Deploy
 
-## What technologies are used for this project?
+Para fazer deploy deste site:
 
-This project is built with:
+1. Execute o comando de build para gerar os arquivos otimizados:
+   ```bash
+   npm run build
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+2. Os arquivos de produção serão gerados na pasta `dist/`
 
-## How can I deploy this project?
+3. Faça upload desses arquivos para o seu servidor de hospedagem
 
-Simply open [Lovable](https://lovable.dev/projects/f451b054-0816-4ce1-90b8-7d846cda9e16) and click on Share -> Publish.
+## Contato e Suporte
 
-## Can I connect a custom domain to my Lovable project?
+Para questões relacionadas ao código ou sugestões de melhorias, entre em contato através de issues neste repositório.
 
-Yes it is!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
